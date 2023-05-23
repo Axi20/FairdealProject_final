@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+}
+
+.hero-section {
+    background-image: url(https://cdn.discordapp.com/attachments/1042149414568984668/1070722822076383322/wp.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+.hero-section-external-div {
+    max-width: 800px;
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title {
+        font-size: 4rem;
+        font-weight: bold;   
+    }
+}
+
+.hero-section-internal-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__choice {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-top: 1.5rem;
+    }
+
+    &__type {
+        font-size: 2rem;
+        font-weight: bold;
+        padding-left: 2rem;
+    }
+
+    &__last-line {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: black;
+    }
+
+    &__link {
+        display: contents;
+        text-decoration: none;
+        color: white;
+        width: 50%;
+    }
+
+    &__button {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        border: none;
+        height: 50px;
+        border-radius: 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        background-color:#163e1dac;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #d3d1d1;
+            color: black;
+        }
+    }
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .about-company {
+    width: 5rem;
+  }
+
+  @media (min-width: 992px) {
+    .col-lg-5 {
+      width: 41.66666667%;
+      float: left;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .col-xs-12 {
+      width: 100%;
+      float: left;
+    }
+  }
+
+  .pr5 { 
+    padding-right: 5rem;
+  }
+
+@media (max-width: 767px) {
+    body {
+        overflow-x:hidden;
+    }
+
+    .effect-title {
+        font-size: 2rem;
+        color:black;
+        padding-left: 30px;
+        padding-right: 30px;
+    } 
+
+    .effect-choice {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    .effect-type {
+        font-size: 1.5rem;
+        padding-left: 5px;
+    }
+
+    .effect-button {
+        width: 150px;
+        font-size: 1rem;
+        padding: 8px;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x:hidden;
+        margin: 0;
+    }
+
+    .hero-section {
+        height: 100%;
+    }
+
+    .hero-section-external-div {
+        height: 88vh;
+
+        &__title {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .hero-section-internal-div {
+        &__choice,
+        &__type {
+            display: none;
+        }
+
+        &__last-line {
+            font-size: 20px;
+            padding: 10px;
+            font-weight: 500;
+        }
+
+        &__link {
+            width: 80%;
+        }
+    }
+}

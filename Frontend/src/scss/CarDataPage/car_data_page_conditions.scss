@@ -1,0 +1,33 @@
+.terms-data{
+    padding: 20px;
+    margin-left: 40px;
+    width: 80%;
+    background-color: #f1767629;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin-right: auto;
+    margin-left: auto;
+
+    &__title {
+        padding-bottom: 1px;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 30px;
+        padding-left: 10px;
+    }
+
+    &__description {
+        width: 100%;
+        margin-top: 5px;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .terms-data {
+        width: 90%;
+    }
+}

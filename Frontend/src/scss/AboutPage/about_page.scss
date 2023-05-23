@@ -1,0 +1,108 @@
+.about-external-div{
+    margin-top: 2rem;
+    margin-right: 20px;
+    margin-left: 30px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.about-us-description {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4px;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 4px;
+    margin-top: 100px;
+    margin-bottom: 4px;
+    border-radius: 0.375rem;
+}
+
+.about-us-intro {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 5px;
+    margin-left: 4px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 0.375rem;
+
+    &__title{
+        padding-bottom: 1px;
+        padding-top: 1px;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    &__description{
+        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+}
+
+.about-data-h1{
+    padding-top: 2px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.about-us__img{
+    max-width: 650px;
+    margin-top: 12px;
+    border-radius: 1rem;
+    margin-left: 10px;
+}
+
+.why-choose-us{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.benefit-feature-hr{
+    margin-top: 30px;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hr-features{
+   margin-top: 100px;
+}
+
+@media screen and (max-width: 767px) {
+    .about-external-div {
+        margin-top: 6rem;
+        margin-bottom: 120px;
+        margin-right: 10px;
+        margin-left: 15px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .about-us__img {
+        max-width: 100%;
+        margin-top: 12px;
+        margin-left: 0;
+    }
+    
+    .about-us-description {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 50px;
+        margin-bottom: 2px;
+    }
+    
+    .about-us-intro {
+        &__title {
+            font-size: 35px;
+            text-align: center;
+        } 
+        &__description {
+            font-size: 16px;
+            text-align: center;
+        }
+   
+    }
+}

@@ -1,0 +1,97 @@
+.signup-external-div{
+    width: 100%;
+    background-image: url("../../assets/wp_02.jpg");
+    background-size: cover;
+    background-position: left;
+    background-attachment:scroll;
+    background-color: #1B262C;
+    margin-left: auto;
+    margin-right: auto;
+    height: 550px;
+    margin-top: 200px;
+}
+
+.signup-internal-div {
+    &__text {
+        color: #d3d1d1;
+        font-size: 20px;
+        width: 40%;
+        float: right;
+        text-align: center;
+        margin-top: 40px;
+        padding-right: 25px;
+        margin-right: 60px;
+    }
+
+    &__signup {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    &__link {
+        display: contents;
+        text-decoration: none;
+        color: white;
+        width: 50%;
+    }
+
+    &__cta-button {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 0px;
+        width: 40%;
+        border-radius: 20px;
+        height: 50px;
+        background-color: #d3d1d1;
+        color: black;
+        margin-top:20px;
+        
+        &:hover {
+            background-color: #24333b;
+            color: #ffffff;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x:hidden;
+    }
+    
+    .signup-external-div {
+        background-image: none;
+        background-color: unset;
+        border-radius: 25px;
+        margin-top: 50px;
+    }
+    .signup-internal-div {
+        width: 100%;
+        
+        &__signup {
+            font-size: 30px;
+        }
+
+        &__text {
+            width: 100%;
+            float: none;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            padding: 20px;
+            color: black;
+        }
+
+        &__cta-button {
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 20px;
+            background-color: #24333b;
+            color: #ffffff;
+            border: none;
+        }
+    }
+}
